@@ -3,7 +3,7 @@
 # Requisitos 
 
 Desarrollar una version web del juego "Damas" (https://es.wikipedia.org/wiki/Damas) con las
-siguientes consideraciones:
+siguientes consideraciones:</br>
   ● Código prolijo.</br>
   ● Consistencia en comentarios, commits y estilos de código.</br>
   ● Diseño responsivo, estética del juego y de la web (usando Flexbox).</br>
@@ -34,4 +34,3 @@ siguientes consideraciones:
 Baez, Agustin Ramiro
 
 # Deploy
-------------
