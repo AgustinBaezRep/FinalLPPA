@@ -1,9 +1,10 @@
 :root {
-    --bar-color: linear-gradient(to right, #601a1a 0%, #ad5858 51%, #601a1a 100%);
+    --bar-color: linear-gradient(to right, #801212 0%, #a03232 51%, #801212 100%);
     --font-roboto: "Roboto", sans-serif;
     --link-color: #fff;
-    --hover-color: #ff3f3f;
+    --hover-color: #3fcaff;
     --border-menu: 1px solid rgba(255, 255, 255, 0.1);
+    --background: linear-gradient(to right, #801212 0%, #a03232 51%, #801212 100%);
 }
 
 html {
@@ -13,11 +14,11 @@ html {
 body {
     font-family: var(--font-roboto);
     font-size: 14px;
+    background: var(--background);
     margin: 0;
     line-height: 24px;
     color: #777777;
     font-weight: 500;
-    background: var(--bar-color);
 }
 
 a {
@@ -67,6 +68,14 @@ a {
     box-sizing: border-box;
 }
 
+.logo {
+    margin-right: 30px;
+}
+
+.logo-image {
+    border-style: none;
+}
+
 .menu {
     display: flex !important;
     flex-grow: 1;
@@ -105,7 +114,7 @@ a {
     border: solid 1px black;
     border-radius: 20px;
     margin: 2rem 0 0 0 ;
-    background: linear-gradient(to right, #412fb7, #231a60);
+    background: var(--background);
     color: greenyellow;
     text-transform: capitalize;
 }
@@ -114,7 +123,7 @@ a {
     border: solid 1px black;
     border-radius: 20px;
     margin: 1rem 0 0 0;
-    background: var(--hover-color);
+    background: var(--background);
     color: greenyellow;
     display: flex;
     align-content: center;
@@ -215,37 +224,32 @@ a {
 }
 
 ::-webkit-scrollbar {
-width: 5px;
-}
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--bar-color); 
+    border-radius: 100%;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color); 
+  }
 
-::-webkit-scrollbar-track {
-box-shadow: inset 0 0 5px grey; 
-border-radius: 10px;
-}
+  .fas {
+      margin-left: 1rem;
+      cursor: pointer;
+  }
 
-::-webkit-scrollbar-thumb {
-background: var(--bar-color); 
-border-radius: 100%;
-}
+  #message-body {
+      color: greenyellow;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-background: var(--hover-color); 
-}
-
-.github {
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
-.fas {
-    margin-left: 1rem;
-    cursor: pointer;
-}
-
-#message-body {
-    color: greenyellow;
-}
-
-#message-modal-content {
-    min-width: 25rem;
-}
+  #message-modal-content {
+      min-width: 25rem;
+  }

@@ -1,4 +1,4 @@
-const urlNotAllowed = "./assets/img/notAllowed.png";
+const urlNotAllowed = "src/img/notAllowed.png";
 
 function selectCell() {
 

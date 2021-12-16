@@ -6,8 +6,7 @@ const tablePlayer = document.getElementById('points'),
     points1 = document.getElementById("points-1"),
     points2 = document.getElementById("points-2"),
     saveGameButton = document.getElementById("save-game"),
-    loadGameButton = document.getElementById("load-game"),
-    winSound = document.getElementById("sound");
+    loadGameButton = document.getElementById("load-game");
 
 window.onload = async () => InitializeBoard();
 
@@ -107,7 +106,7 @@ async function checkTurn(isLoadGame) {
             loser = game.players.player1;
         }
         setTimeout(() => {
-            playWinSound();
+            // playWinSound();
             showMessageModal(`Felicidades ${winner.name} eres el ganador`);
             clearBoard();
             saveScore(winner, loser);
@@ -209,8 +208,4 @@ function saveScore(winner, loser) {
     scoreBoard.push(score);
 
     saveScoreLocal(scoreBoard);
-}
-
-function playWinSound() {
-    winSound.play()
 }

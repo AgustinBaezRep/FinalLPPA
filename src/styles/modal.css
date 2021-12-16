@@ -25,7 +25,7 @@
 }
 
 .modal-content {
-    background: var(--background);
+    background: linear-gradient(to right, #801212 0%, #a03232 51%, #801212 100%);
     border-radius: 10px;
     margin: 25px;
     position: absolute;
@@ -53,14 +53,14 @@
 
 .modal-header {
     padding: 1px;
-    background: var(--bar-color);
+    background: linear-gradient(to right, #801212 0%, #a03232 51%, #801212 100%);
     color: white;
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: var(--border-menu);
+    border-bottom: linear-gradient(to right, #801212 0%, #a03232 51%, #801212 100%);
 }
 
 .modal-body {
